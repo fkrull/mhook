@@ -75,6 +75,7 @@
     <ClInclude Include="disasm-lib\disasm_x86_tables.h" />
     <ClInclude Include="disasm-lib\misc.h" />
     <ClInclude Include="mhook-lib\mhook.h" />
+    <ClInclude Include="mhook-lib\mhookcxx.h" />
   </ItemGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
