@@ -18,6 +18,9 @@
 //FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
 //IN THE SOFTWARE.
 
+#ifndef _MHOOK_H_
+#define _MHOOK_H_
+
 #ifdef _M_IX86
 #define _M_IX86_X64
 #elif defined _M_X64
@@ -26,3 +29,5 @@
 
 BOOL Mhook_SetHook(PVOID *ppSystemFunction, PVOID pHookFunction);
 BOOL Mhook_Unhook(PVOID *ppHookedFunction);
+
+#endif // _MHOOK_H_
