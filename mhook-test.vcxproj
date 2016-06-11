@@ -168,20 +168,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="mhook-lib\mhook.cpp" />
-    <ClCompile Include="disasm-lib\cpu.c" />
-    <ClCompile Include="disasm-lib\disasm.c" />
-    <ClCompile Include="disasm-lib\disasm_x86.c" />
-    <ClCompile Include="disasm-lib\misc.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mhook-lib\mhook.h" />
-    <ClInclude Include="disasm-lib\cpu.h" />
-    <ClInclude Include="disasm-lib\disasm.h" />
-    <ClInclude Include="disasm-lib\disasm_x86.h" />
-    <ClInclude Include="disasm-lib\disasm_x86_tables.h" />
-    <ClInclude Include="disasm-lib\misc.h" />
     <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="mhook.vcxproj">
+      <Project>{03a2963d-a455-40dc-8c54-fb7280718bb9}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
